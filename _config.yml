@@ -1,8 +1,12 @@
 # Setup
-title: Noir
-tagline: a dark mode friendly Jekyll theme
-url: https://noir.essentialenemy.com
-paginate: 1
+title: "Embedded Automotive Insights >>"
+description: >
+  Explore the promise of embedded technology in the automotive industry
+  through concise articles, sharp analysis, and the latest stories on the advancements
+  happening in this field.
+tagline: "Embedded Automotive Insights .."
+url: https://sangtdx.github.io
+paginate: 5
 baseurl: ""
 permalink: :title/
 
@@ -18,7 +22,6 @@ plugins:
 
 # Optimize Jekyll
 exclude:
-  - .editorconfig
   - .git
   - .jekyll-cache
   - Gemfile
@@ -30,18 +33,31 @@ sass:
   sass_dir: _sass
   style: :compressed
 
+include: ['_pages'] # customize pages folder
 # Options
 
 # Replace this value and uncomment to enable Google Analytics tracking
-# ga_analytics: UA-000000-0
+ga_analytics: G-XW85PW7JTE
 
 # Specify the author for blog posts
 author:
-  name: Victor Johnson
-  url: https://twitter.com/essentialenemy
-  email: me@essentialenemy.com
+  name: Tran Dinh Sang
+  url: https://www.linkedin.com/in/sangtdx
+  email: sang.tran2197@gmail.com
+
+avatar: /assets/img/pikafe.jpg
+
+social:
+  name: Sang
+  email: sang.tran2197@gmail.com
+  twitter: SangTDx
+  facebook: SangTDx
+  github: SangTDx
+  linkedin: SangTDx
+
+timezone : Asia/Ho_Chi_Minh
 
 # Custom vars
-version: 1.3.0
+version: 1.0.0
 github:
-  repo: https://github.com/essentialenemy/noir
+  repo: https://github.com/SangTDx
