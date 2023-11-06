@@ -1,88 +1,56 @@
-// Messages
+// Pagination
 
-// Example message box
-// <p class="message-yellow"><small><b>Warning!</b> This is a sentence inside of a message box.</small></p>
+.pagination {
+  overflow: hidden; // clearfix
+  margin: 0 -1.5rem 1rem;
+  color: #ccc;
+  text-align: center;
+}
 
-// Example with close button
-// <p class="message-yellow"><span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span>
-// <small><b>Warning!</b> This is a sentence inside of a message box.</small></p>
-
-.message {
-  margin-bottom: 15px;
-  padding: 12px;
-  color: #fff;
-  background-color: #454545;
-  border-left: .3rem solid #bebebe;
-
+// Pagination items can be `span`s or `a`s
+.pagination-item {
+  display: block;
+  padding: 1rem;
+  border: solid #eee;
+  border-width: 1px 0;
   
 @media (prefers-color-scheme: dark) {
-  color: #fff;
-  background-color: #282828;
-  border-left: .3rem solid #595959;
+  border: solid #111111;
+}
+
+  &:first-child {
+    margin-bottom: -1px;
   }
 }
 
-.green {
-  margin-bottom: 15px;
-  padding: 12px;
-  color: #fff;
-  background-color: $message-green;
-  border-left: .3rem solid #93d080;
+// Only provide a hover state for linked pagination items
+a.pagination-item:hover {
+  background-color: #eee;
+  
+@media (prefers-color-scheme: dark) {
+  background-color: #1e1e1e;
+  }
 }
 
-.yellow {
-  margin-bottom: 15px;
-  padding: 12px;
-  color: #fff;
-  background-color: $message-yellow;
-  border-left: .3rem solid #fdcb61;
-}
+@media (min-width: 30em) {
+  .pagination {
+    margin: 3rem 0;
+  }
 
-.orange {
-  margin-bottom: 15px;
-  padding: 12px;
-  color: #fff;
-  background-color: $message-orange;
-  border-left: .3rem solid #f9ac6b;
-}
+  .pagination-item {
+    float: left;
+    width: 50%;
+    border-width: 1px;
 
-.red {
-  margin-bottom: 15px;
-  padding: 12px;
-  color: #fff;
-  background-color: $message-red;
-  border-left: .3rem solid #e86c71;
-}
-
-.purple {
-  margin-bottom: 15px;
-  padding: 12px;
-  color: #fff;
-  background-color: $message-purple;
-  border-left: .3rem solid #bf61c0;
-}
-
-.blue {
-  margin-bottom: 15px;
-  padding: 12px;
-  color: #fff;
-  background-color: $message-blue;
-  border-left: .3rem solid #2bc2ff;
-}
-
-/* The close button */
-.closebtn {
-  margin-left: 15px;
-  color: white;
-  font-weight: bold;
-  float: right;
-  font-size: 22px;
-  line-height: 27px;
-  cursor: pointer;
-  transition: 0.3s;
-}
-
-/* When moving the mouse over the close button */
-.closebtn:hover {
-  color: black;
+    &:first-child {
+      margin-bottom: 0;
+      border-top-left-radius:    4px;
+      border-bottom-left-radius: 4px;
+    }
+    &:last-child {
+      margin-left: -1px;
+      border-top-right-radius:    4px;
+      border-bottom-right-radius: 4px;
+    }
+  }
 }

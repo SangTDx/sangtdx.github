@@ -1,23 +1,31 @@
 // Posts and pages
+.img-middle {
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+}
 
 figure {
-    margin-right:   0;
-    margin-left:    0;
+    margin-left: auto;
+    margin-right: auto;
     margin-top:     1.5em;
     margin-bottom:  2em;
-    
+    width: 100%;
     & > :nth-last-child(2) {
         margin-bottom: 0;
-        
+        margin-left: auto;
+        margin-right: auto;
         & > :last-child {
-            margin-bottom: 0;
+          margin-left: auto;
+          margin-right: auto;
+          margin-bottom: 0;
         }
     }
     figcaption {
         color: #878787;
         margin-top: 0.3em;
         font-size:  0.8em;
-		text-align: center
+        text-align: center
     }
     &.screenshot {
         margin-left:    0;
@@ -86,6 +94,15 @@ figure {
 .page-title,
 .post-title {
   margin-top: 0;
+}
+
+.post-title-2,
+.post-title-2 a {
+  color: $body-color;
+  font-size: 2rem;
+@media (prefers-color-scheme: dark) {
+  color: $body-color-dark;
+  }
 }
 
 // Meta data line below post title
@@ -198,4 +215,8 @@ figure {
 	    }
     }
   }
+}
+img {
+  margin-left: auto;
+  margin-right: auto;
 }
