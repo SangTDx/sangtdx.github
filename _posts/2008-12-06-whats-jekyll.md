@@ -2,7 +2,7 @@
 layout: post
 title: Embedded Coding Qualities
 date: 2021-09-12 00:00:00
-categories: [[automotive]]
+categories: [automotive]
 tags: [intermediate, functional safety, design]
 last_modified_at: 2023-02-15
 ---
