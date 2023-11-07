@@ -2,7 +2,7 @@
 layout: post
 title: Embedded Coding Qualities
 date: 2021-09-12 00:00:00
-categories: [programming]
+categories: [[programming]]
 tags: [beginner, code quality]
 last_modified_at: 2023-02-15
 ---
