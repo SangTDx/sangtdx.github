@@ -1,10 +1,10 @@
 ---
 layout: post
-title: What's Jekyll?
-date: 2008-12-06 09:30:00
-categories: [Open Source]
-tags: [software]
-last_modified_at: 2019-12-23
+title: Embedded Coding Qualities
+date: 2021-09-12 00:00:00
+categories: [automotive]
+tags: [intermediate, functional safety, design]
+last_modified_at: 2023-02-15
 ---
 
 [Jekyll](http://jekyllrb.com) is a static site generator, an open-source tool for creating simple yet powerful websites of all shapes and sizes. From [the project's readme](https://github.com/jekyll/jekyll/blob/master/README.markdown):
