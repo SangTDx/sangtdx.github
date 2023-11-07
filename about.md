@@ -5,7 +5,7 @@ title: About
 ---
 **Purpose of this blog:** the best ways to really understand something is to explain and share it with others.
 
-**About me:** I'am Very love Trading includig stock Trading and Forex Trading. Had been working as embedded engineer in automotive domain for over 6 years.  
+**About me:** I am very passionate about trading, including stock trading and forex trading. I have been working as an embedded engineer in the automotive domain for over 6 years.
 
 **Education:** graduated from [HCMC University of Technology and Education](https://en.hcmute.edu.vn/) in 2019. I studied electronic and electrical engineering and major in Automation & Control Engineering. 
 1. [Embedded System](https://link)
@@ -19,13 +19,13 @@ title: About
 5. Technical Lead (FPT Software)
 
 **Projects:**
-1. [TRB .NET framework](https://github.com/)
+1. [TRB website .NET framework](https://github.com/)
 2. [Digital Appliances (refrigerator, vacuum cleaner)](https://github.com/)
 3. [Driving Assistant System Radar sensor](https://github.com/)
 4. [Amplifier Harman](https://github.com/)
-5. [DoIP FBL](https://github.com/)
-6. [DoCAN FBL](https://github.com/)
-7. [Zone ECU/ Zonal Architecture](https://github.com/)
+5. [AUTOSAR-DoIP FBL](https://github.com/)
+6. [AUTOSAR-DoCAN FBL](https://github.com/)
+7. [Zone ECU apply in Zonal Architecture](https://github.com/)
 
 **Contact info:** [mail](mailto:sang.tran2197@gmail.com) - [linkedin](https://www.linkedin.com/in/sangtdx/)  
 
