@@ -73,7 +73,7 @@ https://beagleboard.org/black
 
 ### 1. Editor
 
-* OS: Ubuntu 18.04 (LTS)
+* OS: Ubuntu 20.04 (LTS)
 
 * Using VSCode
 
