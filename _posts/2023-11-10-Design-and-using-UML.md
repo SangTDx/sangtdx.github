@@ -67,4 +67,4 @@ last_modified_at: 2023-11-10
 # Learning resources
 
 * **#1** [lecture08-uml1](https://courses.cs.washington.edu/courses/cse403/11sp/lectures/lecture08-uml1.pdf)
-* **#2** [OOP_Bai13(vi](https://users.soict.hust.edu.vn/trungtt/uploads/slides/OOP_Bai13(vi).pdf)
+* **#2** [OOP_Bai13(vi)](https://users.soict.hust.edu.vn/trungtt/uploads/slides/OOP_Bai13(vi).pdf)
