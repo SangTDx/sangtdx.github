@@ -7,9 +7,8 @@ tags: [yocto, beagleBone]
 last_modified_at: 2023-11-10
 ---
 
-# Yocto
 
-## 00 Yocto Introduction
+# 00 Yocto Introduction
 
 ### What is Yocto?
 
@@ -37,7 +36,7 @@ In Later videos, we will try to understand the work flow in detail.
 * Minimum 50 GB free space
 * Minimum 4 GB RAM
 
-#### Supported Linux Distros
+### Supported Linux Distros
 
 - Ubuntu 18.04 (LTS)
 - Ubuntu 20.04 (LTS)
@@ -55,7 +54,7 @@ In Later videos, we will try to understand the work flow in detail.
 
 We are using here **BeagleBone Black**.
 
-#### Main features
+### 1. Main features
 
 * 512MB DDR3 RAM
 * 4 GB emmc
@@ -63,7 +62,7 @@ We are using here **BeagleBone Black**.
 * HDMI
 * GPIOs, UARTs, SPI, I2C, Ethernet, USB ... 
 
-#### PinOut
+### 2.PinOut
 
 https://vadl.github.io/images/bbb/bbb_headers.png
 
@@ -72,7 +71,7 @@ https://beagleboard.org/black
 
 ### Setup Host PC
 
-#### Editor
+### 1. Editor
 
 * OS: Ubuntu 18.04 (LTS)
 
@@ -85,7 +84,7 @@ https://beagleboard.org/black
   sudo snap install --classic code
   ```
 
-#### Install required packages
+### 2. Install required packages
 
 ```bash
 sudo apt install gawk wget git diffstat unzip texinfo gcc build-essential chrpath socat cpio python3 python3-pip python3-pexpect xz-utils debianutils iputils-ping python3-git python3-jinja2 libegl1-mesa libsdl1.2-dev pylint3 xterm python3-subunit mesa-common-dev zstd liblz4-tool
@@ -98,11 +97,11 @@ Reference: https://docs.yoctoproject.org/4.0.7/brief-yoctoprojectqs/index.html#b
 
 ### Building Image
 
-#### What is Poky?
+### 1. What is Poky?
 
 Poky is a *reference distribution* of the Yocto Project®. It contains the OpenEmbedded Build System (BitBake and OpenEmbedded Core) as well as a set of metadata to get you started building your own distro. 
 
-#### Cloning Poky
+### 2. Cloning Poky
 
 Create a project folder and clone the poky in it.
 
@@ -112,7 +111,7 @@ cd yocto_tutorial
 git clone git://git.yoctoproject.org/poky -b kirkstone
 ```
 
-#### Initialize Build Environment
+### 3. Initialize Build Environment
 
 ```bash
 cd poky
@@ -123,7 +122,7 @@ Now we are in **build** folder, there are some folders and files, right now the 
 
 In terminal there are multiple image options
 
-#### Create Source Folder (not necessary, but very much recommended)
+### 4. Create Source Folder (not necessary, but very much recommended)
 
 From build folder run the following command
 
@@ -131,7 +130,7 @@ From build folder run the following command
 mkdir ../../sources
 ```
 
-####  Make Changes in local.conf
+### 5. Make Changes in local.conf
 
 * Change Machine
 
@@ -147,7 +146,7 @@ mkdir ../../sources
 
 We will discuss the content of **local.conf** file  in another chapter.
 
-#### Build Image
+### 6. Build Image
 
 Execute the following command from build folder
 
@@ -161,7 +160,7 @@ On first build it will take time, later when we will make small changes, it will
 
 And will add these changes to our image file
 
-#### Image File
+### 7. Image File
 
 Go to the **tmp** folder, my **tmp** folder is in my source folder, that we created before
 
