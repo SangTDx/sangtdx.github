@@ -7,9 +7,6 @@ tags: [yocto, beagleBone]
 last_modified_at: 2023-11-10
 ---
 
-
-# 02 Flashing BeagleBone Black
-
 ### Image Folder
 
 **sources/tmp/deploy/images/beaglebone-yocto**
