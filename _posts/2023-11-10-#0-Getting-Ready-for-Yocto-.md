@@ -1,10 +1,10 @@
 ---
 layout: post
 title: 00 - Getting Ready for Yocto Project
-date: 2023-11-10 00:00:00
+date: 2023-11-09 00:00:00
 categories: [yocto]
 tags: [yocto, beagleBone]
-last_modified_at: 2023-11-10
+last_modified_at: 2023-11-09
 ---
 
 ### Your Workstation Setup
@@ -62,4 +62,28 @@ system formatted correctly for the chosen form of deployment
 <figure>
   <img src="/assets/img/blogs/yocto/member.png" alt="Yocto Member">
   <figcaption>Yocto Member</figcaption>
+</figure>
+
+###  What is Yocto Project?
+**Yocto is not a Linux distribution. Yocto creates one for you**
+
+* An Open source project with a strong community
+* A collection of embedded tools and projects
+    • Place for Vendors to release BSPs
+    • Application Development Tools (ADT) including Eclipse plug-ins
+* Support for ARM, x86, MIPS and Power
+* Layer approach enables re-use of software
+* Complete build system for Linux OS
+    • Latest kernel (LTSI)
+    • Toolchain
+    • Packages
+    • Documentation
+* Releases every 6 months
+
+### Yocto Project Releases
+**Yocto names its releases, similar to Android**[here](https://wiki.yoctoproject.org/wiki/Releases)
+
+<figure>
+  <img src="/assets/img/blogs/yocto/yocto-releases.png" alt="Yocto Releases">
+  <figcaption>Yocto Releases</figcaption>
 </figure>
