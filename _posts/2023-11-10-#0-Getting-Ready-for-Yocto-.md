@@ -69,15 +69,15 @@ system formatted correctly for the chosen form of deployment
 
 * An Open source project with a strong community
 * A collection of embedded tools and projects
-    * • Place for Vendors to release BSPs
-    * • Application Development Tools (ADT) including Eclipse plug-ins
+    * Place for Vendors to release BSPs
+    * Application Development Tools (ADT) including Eclipse plug-ins
 * Support for ARM, x86, MIPS and Power
 * Layer approach enables re-use of software
 * Complete build system for Linux OS
-    * • Latest kernel (LTSI)
-    * • Toolchain
-    * • Packages
-    * • Documentation
+    * Latest kernel (LTSI)
+    * Toolchain
+    * Packages
+    * Documentation
 * Releases every 6 months
 
 ### Yocto Project Releases
@@ -90,19 +90,19 @@ system formatted correctly for the chosen form of deployment
 
 ###  The Yocto Project Nomenclature
 * BitBake
-   * • Powerful and flexible build engine
-   * • Determines dependencies and schedules tasks
+   * Powerful and flexible build engine
+   * Determines dependencies and schedules tasks
 * Metadata
-  * • A structured collection of “recipes” which tell BitBake what to build
-  * • Organized in layers
+  * A structured collection of “recipes” which tell BitBake what to build
+  * Organized in layers
 * Poky
-  * • The reference system
-  * • It is a collection of projects and tools, used to bootstrap a new distribution based on the Yocto Project
+  * The reference system
+  * It is a collection of projects and tools, used to bootstrap a new distribution based on the Yocto Project
 * Recipes
-  * • Describe how to fetch, configure, compile and package an application and images
-  * • Have a specific syntax.
+  * Describe how to fetch, configure, compile and package an application and images
+  * Have a specific syntax.
 * Layers
-  * • Sets of recipes, matching a common purpose. E.g. Freescale i.MX enabling layer
+  * Sets of recipes, matching a common purpose. E.g. Freescale i.MX enabling layer
 
 ###  Yocto Project
 
