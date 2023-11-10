@@ -45,19 +45,19 @@ Example **"meta/recipes-extended/minicom/minicom_2.8.bb"**
 
 ### 1. Show layers  in bblayers.conf
 
-```bitbake
+```bash
 bitbake-layers show-layers
 ```
 
 ### 2. Add layer to bblayers.conf?
 
-```bitbake
+```bash
 bitbake-layers add-layer <path/to/layer>
 ```
 
 ### 3. Remove layer from bblayers.conf?
 
-```bitbake
+```bash
 bitbake-layers remove-layer <path/to/layer>
 ```
 
