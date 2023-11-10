@@ -99,5 +99,5 @@ Environment (RTE) and DDS communication frameworks.
 
 <figure>
   <img src="/assets/img/blogs/zonal-architechture/innovation-group.png" alt="INNOVATION IN ZONAL ARCHITECTURE">
-  <figcaption>INNOVATION IN ZONAL ARCHITECTURE</figcaption>
+  <figcaption>Innovation group in Zonal Architechture</figcaption>
 </figure>
