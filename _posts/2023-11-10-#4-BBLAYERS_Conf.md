@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Knowing the bblayers.conf file - 04
+title: Lesson 04 - Knowing the bblayers.conf file
 date: 2023-11-10 00:00:00
 categories: [yocto]
 tags: [yocto, beagleBone]

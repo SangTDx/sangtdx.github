@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Introduction to Yocto & Building Linux for BeagleBone Black - 01
+title: Lesson 01 - Introduction to Yocto & Building Linux for BeagleBone Black
 date: 2023-11-10 00:00:00
 categories: [yocto]
 tags: [yocto, beagleBone]

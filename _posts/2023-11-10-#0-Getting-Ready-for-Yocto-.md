@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Getting Ready for Yocto Project - 01
+title: Lesson 00 - Getting Ready for Yocto Project
 date: 2023-11-09 00:00:00
 categories: [yocto]
 tags: [yocto, beagleBone]

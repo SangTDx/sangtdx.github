@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Introduction about Adaptive AUTOSAR - 01
+title: Lesson 01 - Introduction about Adaptive AUTOSAR
 date: 2023-11-10 00:00:00
 categories: [autosar]
 tags: [adaptive autosar]
