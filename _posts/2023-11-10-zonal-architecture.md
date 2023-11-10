@@ -80,7 +80,7 @@ benefits include:
 manufacturers are well aware of the interoperability challenges
 posed by ECUs and the need to integrate, simplify and free up
 space under the hood for new functionality. 
-* Connext Drive reflects the capabilities of RTI’s proven software
+* Connext Drive reflects the capabilities of proven software
 communication framework and the commitment to support the
 collocation of different technologies: It can operate natively
 based on the Data Distribution Service (DDS™) standard, or by
@@ -89,7 +89,7 @@ and AUTOSAR Adaptive.
 * The DDS standard is part of the AUTOSAR Adaptive
 specification, opening up the platform to a whole new level of
 integration to help OEMs meet the demanding requirements at
-the zonal gateway level. The RTI Connext® Integration Toolkit
+the zonal gateway level. The Connext® Integration Toolkit
 for AUTOSAR Classic bridges AUTOSAR Adaptive to Connext
 Drive. It supports automatic conversion of data type definitions
 across standard formats (OMG® IDL, OMG DDS-XML and
