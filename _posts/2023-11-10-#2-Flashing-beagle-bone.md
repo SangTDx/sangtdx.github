@@ -1,14 +1,14 @@
 ---
 layout: post
-title: 02-Flashing Yocto Built Custom Linux OS onto BeagleBone Black
+title: Yocto!2-Flashing Yocto Built Custom Linux OS onto BeagleBone Black
 date: 2023-11-10 00:00:00
-categories: [linux]
+categories: [yocto]
 tags: [yocto, beagleBone]
 last_modified_at: 2023-11-10
 ---
 
 
-# 01 Flashing BeagleBone Black
+# 02 Flashing BeagleBone Black
 
 ### Image Folder
 
