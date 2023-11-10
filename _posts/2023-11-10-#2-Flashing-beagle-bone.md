@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Lesson 02 - Flashing Yocto Built Custom Linux OS onto BeagleBone Black
+title: yocto 02 - Flashing Yocto Built Custom Linux OS onto BeagleBone Black
 date: 2023-11-10 00:00:00
 categories: [yocto]
 tags: [yocto, beagleBone]
