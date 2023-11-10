@@ -98,6 +98,6 @@ code for data conversion and marshaling between the Runtime
 Environment (RTE) and DDS communication frameworks.
 
 <figure>
-  <img src="/assets/img/blogs/zonal-architechture/innovation-group.png.png" alt="INNOVATION IN ZONAL ARCHITECTURE">
+  <img src="/assets/img/blogs/zonal-architechture/innovation-group.png" alt="INNOVATION IN ZONAL ARCHITECTURE">
   <figcaption>INNOVATION IN ZONAL ARCHITECTURE</figcaption>
 </figure>
