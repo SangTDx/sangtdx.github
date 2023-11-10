@@ -29,7 +29,7 @@ bitbake-layers show-recipes git
 
 ### Reference Link
 
-[Link](https://docs.yoctoproject.org/ref-manual/variables.html#)
+[ref-manual](https://docs.yoctoproject.org/ref-manual/variables.html#)
 
 ### End
 
