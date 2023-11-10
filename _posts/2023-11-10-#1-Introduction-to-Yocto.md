@@ -62,7 +62,7 @@ We are using here **BeagleBone Black**.
 * HDMI
 * GPIOs, UARTs, SPI, I2C, Ethernet, USB ... 
 
-### 2.PinOut
+### 2. PinOut
 
 https://vadl.github.io/images/bbb/bbb_headers.png
 
