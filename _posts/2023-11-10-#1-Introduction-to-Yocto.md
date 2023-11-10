@@ -8,7 +8,7 @@ last_modified_at: 2023-11-10
 ---
 
 
-# 00 Yocto Introduction
+# 01 Yocto Introduction
 
 ### What is Yocto?
 
