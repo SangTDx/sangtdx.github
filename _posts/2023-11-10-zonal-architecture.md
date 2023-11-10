@@ -8,7 +8,7 @@ last_modified_at: 2023-11-10
 ---
 
 
-# HIGHLIGHTS
+# Highlights
 
 * An automotive-grade data-centric software framework that
 optimizes cost, network distribution, safety and security
@@ -22,7 +22,7 @@ AUTOSAR Adaptive, ROS 2 and Time-Sensitive Networking
 * Provides a safety certification pathway to achieve up to ISO
 26262 ASIL D compliance
 
-# THE RISE OF NEXT GEN E/E ZONAL ARCHITECTURE
+# The Rise Of Next Gen E/E Zonal Architecture
 
 **Zonal architecture is the name given to this new approach to vehicle electronics**
 
@@ -43,7 +43,7 @@ zonal architecture in tomorrow’s autonomous vehicles.
   <figcaption>Zonal Architecture</figcaption>
 </figure>
 
-# ACHIEVING ECU CONSOLIDATION
+# Achieving ECU Consolidation
 
 * The combination of zonal architecture with Connext Drive
 supports manufacturers who are trying to consolidate electronic
@@ -74,7 +74,7 @@ benefits include:
   applications, making it possible to compete in new
   markets with dedicated product offerings
 
-# DELIVERING INTEROPERABILITY
+# Delivering Interoperability
 
 * Because modern vehicles often include over 100 ECUs,
 manufacturers are well aware of the interoperability challenges
