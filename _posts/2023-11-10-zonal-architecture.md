@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Introduction about Zonal Architecture
+title: Zonal Architecture
 date: 2023-11-10 00:00:00
 categories: [automotive]
 tags: [zonal architecture]

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Introduction to Unified Modeling Language (UML)
+title: Unified Modeling Language (UML)
 date: 2023-11-10 00:00:00
 categories: [automotive]
 tags: [design, uml]
