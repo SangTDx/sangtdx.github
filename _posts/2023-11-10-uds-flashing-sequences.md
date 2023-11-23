@@ -139,12 +139,18 @@ For example:
 > Flash programming conditions require the vehicle speed to be less than 3km/h and ECU
 is in a normal working voltage state.
 
+### 2.5.4 Programming Counter
+The Bootloader software shall count the number of programming event for each logical
+block. When RoutineControl ($31 $01 $FF00) is requested, Bootloader should check the programming counter of the related logic block referring to the request of erasing addressand size. If the programming counter exceeds a predefined value, the current erase routine request must be denied.If erasing successfully, the programming counter of each logic block should only be increased by one.
 
-# 4. Process terminology
+# 3. ECU FBL Software Architecture
+The Bootloader software is subdivided into several functional blocks
+
 <figure>
-  <img src="/assets/img/blogs/automotive/Flashing Sequences/memory.png" alt="memory map of a reprogrammable ECU">
-  <figcaption>memory map of a reprogrammable ECU</figcaption>
+  <img src="/assets/img/blogs/automotive/Flashing Sequences/Functional-blocks.png" alt="Functional blocks of the Bootloader">
+  <figcaption>Functional blocks of the Bootloader</figcaption>
 </figure>
+
 
 # References
 [https://www.autosar.org/fileadmin/standards/R20-11/CP/AUTOSAR_EXP_FirmwareOverTheAir.pdf](https://www.autosar.org/fileadmin/standards/R20-11/CP/AUTOSAR_EXP_FirmwareOverTheAir.pdf)
