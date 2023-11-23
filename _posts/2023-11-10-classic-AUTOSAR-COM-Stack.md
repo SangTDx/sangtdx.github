@@ -1,9 +1,9 @@
 ---
 layout: post
-title: Introduction about Adaptive AUTOSAR
+title: CAN-COM Stack in Classic AUTOSAR
 date: 2023-11-10 00:00:00
 categories: [autosar]
-tags: [adaptive autosar]
+tags: [classic autosar]
 last_modified_at: 2023-11-10
 ---
 
