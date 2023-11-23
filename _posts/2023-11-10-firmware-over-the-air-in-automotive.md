@@ -51,5 +51,31 @@ This approach brings several aspects that are to be considered:
  - The power supply concept and residual capacity of battery shall be
    also taken with care following this approach.
 
+# 3. System Component Terminology
+3.1 FOTA Target 
+This term applies to all ECUs which are capable to be updated via the FOTA procedure in general.
+
+3.2 FOTA Master
+The FOTA Master specifies the instance which handles all software updates with all their related information needed to apply the respective update to the FOTA Target ECU addressed by the FOTA update process.
+
+3.3 (FOTA-) Image
+The term Image describes a full downloadable ECU software collection. This shall be regardless if partial, incremental or full featured ECU software is downloaded and installed. Applying a new Image to an ECU will update at least one of the following ECU software parts:
+
+ - Application software  
+ - Basic software  
+ - Calibration data
+
+3.4 Backend
+This identifies the remote instance which provides the FOTA Image to be downloaded into the FOTA Target ECU (e.g. via Wifi, 3G, 4G, 5G, etc.).
+
+3.5 Data Chunk
+Data Chunks are data packets, transferred from the FOTA Master ECU to the FOTA Target ECU, containing the raw image data (UDS TransferData service payload). This term is used since the length of each data chunk may vary.
+
+# 4. Process terminology
+<figure>
+  <img src="/assets/img/blogs/automotive/FOTA/fota-phases.png" alt="FOTA Phases">
+  <figcaption>FOTA Phases</figcaption>
+</figure>
+
 # References
 [https://www.autosar.org/fileadmin/standards/R20-11/CP/AUTOSAR_EXP_FirmwareOverTheAir.pdf](https://www.autosar.org/fileadmin/standards/R20-11/CP/AUTOSAR_EXP_FirmwareOverTheAir.pdf)
