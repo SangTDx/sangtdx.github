@@ -21,4 +21,7 @@ last_modified_at: 2023-11-10
   * FOTA client: application responsible for communication with a backend server and updating campaign management for all the other ECUs in the vehicle. Typically runs on FOTA gateway.
   * FOTA agent: application that performs final updating of firmware for ECUs during run-time. It sometimes also runs on FOTA gateway to support self-updating.
 
-
+<figure>
+  <img src="/assets/img/blogs/automotive/FOTA/system-block-diagram.png" alt="System Blog Diagram">
+  <figcaption>System Blog Diagram - from NXP</figcaption>
+</figure>
