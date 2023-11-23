@@ -64,6 +64,20 @@ last_modified_at: 2023-11-10
 * as a programming language: with the right tools, code can be auto-generated and executed from UML
   * only good if this is faster than coding in a "real" language
 
+# Example
+
+1. State machine diagram
+<figure>
+  <img src="/assets/img/blogs/automotive/state-machine-of-fota-target.png" alt="State machine of the FOTA Target">
+  <figcaption>State machine of the FOTA Target</figcaption>
+</figure>
+
+2. Sequence Diagram
+<figure>
+  <img src="/assets/img/blogs/automotive/installation-sequences.png" alt="Installation sequence">
+  <figcaption>Installation sequence</figcaption>
+</figure>
+
 # Learning resources
 
 * **#1** [lecture08-uml1](https://courses.cs.washington.edu/courses/cse403/11sp/lectures/lecture08-uml1.pdf)
