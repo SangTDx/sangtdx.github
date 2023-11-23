@@ -147,7 +147,7 @@ block. When RoutineControl ($31 $01 $FF00) is requested, Bootloader should check
 The Bootloader software is subdivided into several functional blocks
 
 <figure>
-  <img src="/assets/img/blogs/automotive/Flashing Sequences/Functional-blocks.png" alt="Functional blocks of the Bootloader">
+  <img src="/assets/img/blogs/automotive/Flashing Sequences/functional-block.png" alt="Functional blocks of the Bootloader">
   <figcaption>Functional blocks of the Bootloader</figcaption>
 </figure>
 
