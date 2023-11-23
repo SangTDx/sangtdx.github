@@ -122,14 +122,19 @@ damage to the ECU and the vehicle.
 
 ### 2.5 Download Of Flash Data
 
-* **2.5.1 Addressing**
+**2.5.1 Addressing**
+
 The addressing scheme for download data is based on a linear address space. Due to
 differences in the underlying microcontroller platforms ,it may be necessary for the
 Bootloader to perform address translation while operating Flash.
-* **2.5.2 Erasing Of Flash Memory**
+
+**2.5.2 Erasing Of Flash Memory**
+
 Flash devices require that Flash memory is erased before it is reprogrammed. Any Flash
 cell must not be reprogrammed without a previous erase procedure.
-* **2.5.3 Flash Programming Conditions**
+
+**2.5.3 Flash Programming Conditions**
+
 Before the Flash reprogramming procedure is started, programming conditions must be
 checked. A reprogrammed ECU may be in a condition that does not permit reprogramming. In
 this case, reprogramming must be rejected. The check for Flash programming conditions
