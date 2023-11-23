@@ -66,13 +66,13 @@ last_modified_at: 2023-11-10
 
 # Example
 
-* 1. State machine diagram
+* State machine diagram
 <figure>
   <img src="/assets/img/blogs/automotive/state-machine-of-fota-target.png" alt="State machine of the FOTA Target">
   <figcaption>State machine of the FOTA Target</figcaption>
 </figure>
 
-* 2. Sequence Diagram
+* Sequence Diagram
 
 <figure>
   <img src="/assets/img/blogs/automotive/installation-sequences.png" alt="Installation sequence">
