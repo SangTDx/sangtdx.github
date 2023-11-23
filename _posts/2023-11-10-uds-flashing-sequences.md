@@ -20,17 +20,17 @@ last_modified_at: 2023-11-10
 
 **Terms and definitions**
 The following terms and definitions for the standard.
-Cyclic Redundancy Check（CRC）
-Electronic Control Unit（ECU）
-Electrically Erasable Programmable Read Only Memory （EEPROM）
-Negative Response Code（NRC）
-Unified Diagnostic Services（UDS）
-Transport Protocol （TP）
-Service Identifier （SID）
-Data Identifier （DID）
-Separation Time Minimum（STmin）
-Micro Controller Unit （MCU）
-Boot Loader（Bootloader）
+- Cyclic Redundancy Check（CRC）
+- Electronic Control Unit（ECU）
+- Electrically Erasable Programmable Read Only Memory （EEPROM）
+- Negative Response Code（NRC）
+- Unified Diagnostic Services（UDS）
+- Transport Protocol （TP）
+- Service Identifier （SID）
+- Data Identifier （DID）
+- Separation Time Minimum（STmin）
+- Micro Controller Unit （MCU）
+- Boot Loader（Bootloader）
 
 # Introduction
 A reprogrammable ECU contains at least Bootloader. A complete ECU is typically composed
@@ -50,6 +50,52 @@ of the system can be fully used by both software packages.
 The Bootloader software uses the diagnostic services of UDS as protocol for download
 communication. Therefore, the Bootloader has got a communication stack of CAN(FD) driver,
 transport layer and a subset of the UDS protocol layer.
+
+# Flash EEPROM Reprogramming Requirements
+
+## Requirements for non-reprogrammable ECUs
+
+In order to operate reprogrammable and non-reprogrammable ECUs together in one network,
+non-reprogrammable ECUs shall support the diagnostic services specified in6.3.2 except the
+DiagnosticSessionControl –programmingSession request.
+If a non-reprogammable ECU receives a DiagnosticSessionControl –programmingSession
+($10 $02) it shall send the negative response code $12(subFunctionNotSupported).
+
+## General Requirements
+The system shall be able to enter the Bootloader on request from normal operating mode
+or if no ECU application software is available.
+
+The system can be reprogrammed in the event of a failed reprogramming (short circuit,
+open circuit) or interrupted, timeout or reset, Flash erasure incomplete, or invalid
+application.
+
+The system shall execute Bootloader codeif the application code is missing, invalid or
+corrupt.
+
+A system executing Bootloader code must not disturb normal communication on the network.
+
+All ECUs connected to the network shall disable their normal message transmission after
+they received a disable normal message transmission request. Normal communication shall be
+enabled on all ECUs after an explicit request to enable normal communication, after return
+to the default session and after a PowerOn/Reset.
+
+All ECUs connected to the network shall disable their DTC settings after they received
+a request to disable fault code setting. Fault code setting shall be enabled on all ECUs
+after an explicit request to enable fault code setting, after return to the default session
+and after a PowerOn/Reset.
+
+After all download data has been transferred, the integrity of the programmed data
+shall be ensured by a verification routine. Therefore, an explicit check value shall be
+provided to be compared against the value calculated on the ECU.
+
+If a watchdog is used in the ECU, it shall be served during the complete Flash
+reprogramming sequence.
+
+It must be ensured that the Bootloader software has the ability to recover under
+abnormal conditions such as a dead loop.
+
+A programming dependency check shall be performed after download if more than one
+module can be reprogrammed on the system.
 
 # 4. Process terminology
 <figure>
