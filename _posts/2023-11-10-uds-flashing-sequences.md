@@ -53,7 +53,7 @@ transport layer and a subset of the UDS protocol layer.
 
 # 2. Flash EEPROM Reprogramming Requirements
 
-## 2.1 Requirements for non-reprogrammable ECUs
+### 2.1 Requirements for non-reprogrammable ECUs
 
 In order to operate reprogrammable and non-reprogrammable ECUs together in one network,
 non-reprogrammable ECUs shall support the diagnostic services specified in6.3.2 except the
@@ -61,7 +61,7 @@ DiagnosticSessionControl –programmingSession request.
 If a non-reprogammable ECU receives a DiagnosticSessionControl –programmingSession
 ($10 $02) it shall send the negative response code $12(subFunctionNotSupported).
 
-## 2.2 General Requirements
+### 2.2 General Requirements
 The system shall be able to enter the Bootloader on request from normal operating mode
 or if no ECU application software is available.
 
@@ -100,12 +100,12 @@ module can be reprogrammed on the system.
 In order to reduce power consumption when an ECU application is not valid, Bootloader
 should also support sleep and wakeup function.
 
-## 2.3 Resource Requirements
+### 2.3 Resource Requirements
 
 The Flash memory consumption of the Bootloader must be kept to minimum since the
 available Flash memory of an ECU is shared by application and Bootloader.
 
-## 2.4 Security Requirements
+### 2.4 Security Requirements
 
 Before a reprogramming procedure is started, the security access service shall be
 passed successfully.
@@ -120,7 +120,7 @@ hardware protection).
 The Bootloader should set the ECU input and output ports to a safe state to prevent
 damage to the ECU and the vehicle.
 
-## 2.5 Download Of Flash Data
+### 2.5 Download Of Flash Data
 
 **2.5.1 Addressing**
 The addressing scheme for download data is based on a linear address space. Due to
