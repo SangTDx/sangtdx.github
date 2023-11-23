@@ -78,6 +78,11 @@ last_modified_at: 2023-11-10
   <figcaption>Installation sequence</figcaption>
 </figure>
 
+<figure>
+  <img src="/assets/img/blogs/automotive/confirmation-sequences.png" alt="Confirmation handling between the PDU Router">
+  <figcaption>Confirmation handling between the PDU Router</figcaption>
+</figure>
+
 # Learning resources
 
 * **#1** [lecture08-uml1](https://courses.cs.washington.edu/courses/cse403/11sp/lectures/lecture08-uml1.pdf)
