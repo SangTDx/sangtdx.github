@@ -50,3 +50,6 @@ This approach brings several aspects that are to be considered:
    update have to be rolled back as well.
  - The power supply concept and residual capacity of battery shall be
    also taken with care following this approach.
+
+# References
+[https://www.autosar.org/fileadmin/standards/R20-11/CP/AUTOSAR_EXP_FirmwareOverTheAir.pdf](https://www.autosar.org/fileadmin/standards/R20-11/CP/AUTOSAR_EXP_FirmwareOverTheAir.pdf)
