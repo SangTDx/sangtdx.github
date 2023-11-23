@@ -151,6 +151,16 @@ The Bootloader software is subdivided into several functional blocks
   <figcaption>Functional blocks of the Bootloader</figcaption>
 </figure>
 
+ - **Bootloader Application Framework**: The Bootloader application framework provides the boot procedure and the time base handling for the Bootloader components.
+ - **Bootloader Application**: This module permits supplier-specific code in order to support system specific implementations.
+ - **Bootloader Download State Handler**: Controls the states of the download sequence and the Flash programming.
+ - **Diagnostics Protocol**: This module provides all diagnostic services needed for the download procedure.
+ - **Transport Protocol** : Transport Layer protocol stack to support segmented transmission of diagnosis/ download data.
+ - **Watchdog Driver**: Provide system abnormal restart function.
+ - **Security Module**: The security module provides implementations required for the security access service and the verification of the download.
+ - **Flash Driver**: The Flash driver provides routines for Flash erasing and programming.
+ - **EEPROM Driver**: The EEPROM driver provides routines for EEPROM erasing and programming.
+ - **CAN(FD)/ ETH Driver**: Providing the CAN(FD)/ ETH message reception and transmission functions.
 
 # References
 [https://www.autosar.org/fileadmin/standards/R20-11/CP/AUTOSAR_EXP_FirmwareOverTheAir.pdf](https://www.autosar.org/fileadmin/standards/R20-11/CP/AUTOSAR_EXP_FirmwareOverTheAir.pdf)
