@@ -3,7 +3,7 @@ layout: page
 permalink: /about/
 title: About
 ---
-**Purpose of this blog:** the best ways to really understand something is to explain and share it with others.
+**Purpose of this blog:** The primary goal of this blog is to delve into the most effective methods for gaining a profound understanding of a subject, emphasizing that true comprehension is achieved through the act of explaining and sharing knowledge with others.
 
 **About me:** I am very passionate about investment, including stock and forex. I have been working as an embedded engineer in the automotive domain for over 6 years.
 
