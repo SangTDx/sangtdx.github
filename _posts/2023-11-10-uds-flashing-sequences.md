@@ -169,20 +169,20 @@ The Bootloader software is subdivided into several functional blocks
  - **CAN(FD)/ ETH Driver**: Providing the CAN(FD)/ ETH message reception and transmission functions.
 
 ### 3.2 Flash Memory Partitioning
-**Physical Flash Sectors**
+**3.2.1 Physical Flash Sectors**
 
 The Bootloader shall take into account that the underlying Flash technology determines
 the minimum number of bytes that must be erased all at once. This size is called a physical
 Flash sector. The memory area of a Flash device usually is divided into several Flash
 sectors.
 
-**Physical Flash Pages**
+**3.2.2 Physical Flash Pages**
 
 The Bootloader shall take into account that the underlying Flash technology determines
 the minimum number of bytes that must be programmed all at once. This size is called a
 physical Flash page.
 
-**Logical Blocks**
+**3.2.3 Logical Blocks**
 
 The logical block is a logical division of Flash data, and the ECU's Flash data may be
 divided into multiple logical blocks. From the application point of view these are the
@@ -206,7 +206,7 @@ The file format of the download file is recommended as S19, Hex, Mot (optional).
 is a Bin file，it must use the uniform format of the header, which should be located at
 beginning of each Bin file.
 
-**Segment**
+**3.2.4 Segment**
 
 A segment must reside inside of the address range of the current logical block.
 
