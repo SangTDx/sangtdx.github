@@ -219,5 +219,26 @@ address must be an integer multiple of 4.
   <figcaption>Segmentation of logical block data</figcaption>
 </figure>
 
+**3.2.5 Configuration**
+
+* Configuration 1
+
+ECU Flash memory with the Bootloader code in the
+protected memory area and one logical block 0（contains application code and calibration
+data） in the reprogrammable area. The complete logical block 0 can only be erased and
+reprogrammed at once.
+
+* Configuration 2
+
+ECU Flash memory with the Bootloader code in the
+protected memory and several logical blocks in the protected area. Logical Block 1 contains
+only the calibrated data, so the logical block 1 can be reprogrammed separately when the
+content is changed.
+
+<figure>
+  <img src="/assets/img/blogs/automotive/Flashing Sequences/logical_blocks.png" alt="Configuration of logical blocks">
+  <figcaption>Configuration of logical blocks</figcaption>
+</figure>
+
 # References
 [https://www.autosar.org/fileadmin/standards/R20-11/CP/AUTOSAR_EXP_FirmwareOverTheAir.pdf](https://www.autosar.org/fileadmin/standards/R20-11/CP/AUTOSAR_EXP_FirmwareOverTheAir.pdf)
