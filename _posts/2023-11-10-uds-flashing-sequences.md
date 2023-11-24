@@ -149,6 +149,7 @@ The Bootloader software shall count the number of programming event for each log
 block. When RoutineControl ($31 $01 $FF00) is requested, Bootloader should check the programming counter of the related logic block referring to the request of erasing addressand size. If the programming counter exceeds a predefined value, the current erase routine request must be denied.If erasing successfully, the programming counter of each logic block should only be increased by one.
 
 # 3. ECU FBL Software Architecture
+### 3.1 Functional Overview
 The Bootloader software is subdivided into several functional blocks
 
 <figure>
@@ -166,6 +167,57 @@ The Bootloader software is subdivided into several functional blocks
  - **Flash Driver**: The Flash driver provides routines for Flash erasing and programming.
  - **EEPROM Driver**: The EEPROM driver provides routines for EEPROM erasing and programming.
  - **CAN(FD)/ ETH Driver**: Providing the CAN(FD)/ ETH message reception and transmission functions.
+
+### 3.2 Flash Memory Partitioning
+**Physical Flash Sectors**
+
+The Bootloader shall take into account that the underlying Flash technology determines
+the minimum number of bytes that must be erased all at once. This size is called a physical
+Flash sector. The memory area of a Flash device usually is divided into several Flash
+sectors.
+
+**Physical Flash Pages**
+
+The Bootloader shall take into account that the underlying Flash technology determines
+the minimum number of bytes that must be programmed all at once. This size is called a
+physical Flash page.
+
+**Logical Blocks**
+
+The logical block is a logical division of Flash data, and the ECU's Flash data may be
+divided into multiple logical blocks. From the application point of view these are the
+minimum units that can be individually erased and/or reprogrammed. Each logical block can
+be erased and reprogrammed independently from others. The basic motivation for Flash
+partitioning is to avoid reprogramming of the complete Flash memory when only a certain
+part of the application software or calibration data has changed.
+
+The partition that is occupied by the Bootloader is called boot block and cannot be
+reprogrammed. The contents of a logical block can be determined by the ECU supplier and
+can consist of code, data or both.
+
+Logical blocks must be aligned to physical Flash sectors. That means that a block shall
+start at a physical Flash sector and shall comprise an integer number of Flash sectors. This
+requirement makes sure that each logical block can be erased and reprogrammed individually
+without affecting other blocks, logical blocks must not overlap, and they must not share
+one common physical Flash sector.
+
+Logical blocks must not be nested. There is at least one logical block in a ECU.
+The file format of the download file is recommended as S19, Hex, Mot (optional). If it
+is a Bin file，it must use the uniform format of the header, which should be located at
+beginning of each Bin file.
+
+**Segment**
+
+A segment must reside inside of the address range of the current logical block.
+
+The start address of the segment must be aligned to an integer multiple of the Flash
+physical page . For example,if the Flash physical page is 4 bytes, then the starting
+address must be an integer multiple of 4.
+
+<figure>
+  <img src="/assets/img/blogs/automotive/Flashing Sequences/segmentation.png" alt="Segmentation of logical block data">
+  <figcaption>Segmentation of logical block data</figcaption>
+</figure>
 
 # References
 [https://www.autosar.org/fileadmin/standards/R20-11/CP/AUTOSAR_EXP_FirmwareOverTheAir.pdf](https://www.autosar.org/fileadmin/standards/R20-11/CP/AUTOSAR_EXP_FirmwareOverTheAir.pdf)
