@@ -1,123 +1,104 @@
-// Reset box-sizing for all elements
+// Body
+
 * {
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
-// Reset margin and padding for the entire document
-html, body {
+html,
+body {
   margin: 0;
   padding: 0;
 }
 
-// Set base styles for the document
 html {
-  font-family: 'Roboto', sans-serif;
-  font-size: 16px;
-  line-height: 1.6;
-  word-spacing: 0.1rem;
+  font-family: $root-font-family;
+  font-size: $root-font-size;
+  line-height: $root-line-height;
+  word-spacing: 0.15rem;
 
-  @media (min-width: 768px) {
-    font-size: 18px;
+  @media (min-width: $large-breakpoint) {
+    font-size: $large-font-size;
   }
 }
 
-// Set default body styles
 body {
-  color: #000000;
-  background-color: #f8f8f8;
+  color: $body-color;
+  background-color: $body-bg;
   -webkit-text-size-adjust: 100%;
-  -ms-text-size-adjust: 100%;
-
-  // Dark mode styles
-  @media (prefers-color-scheme: dark) {
-    color: #ddd;
-    background-color: #222;
+      -ms-text-size-adjust: 100%;
+	  
+@media (prefers-color-scheme: dark) {
+  color: $body-color-dark;
+  background-color: $body-bg-dark;
   }
 }
 
-// Style links
+// No `:visited` state is required by default (browsers will use `a`)
 a {
-  color: #3498db;
+  color: $light;
   text-decoration: none;
-  transition: color 0.3s ease;
 
-  // Hover and focus styles
+  // `:focus` is linked to `:hover` for basic accessibility
   &:hover,
   &:focus {
-    color: #2980b9;
-
-    // Dark mode styles for links
-    @media (prefers-color-scheme: dark) {
-      color: #4a90e2;
+    text-decoration: none;
+	color: $light;
+	
+	@media (prefers-color-scheme: dark) {
+    color: $dark;
     }
   }
 
-  // Style strong within links
   strong {
     font-weight: bold;
+    color: inherit;
   }
-
-  // Dark mode styles for links
-  @media (prefers-color-scheme: dark) {
-    color: #4a90e2;
+  
+@media (prefers-color-scheme: dark) {
+  color: $dark;
   }
 }
 
-// Style images
 img {
   display: block;
   max-width: 100%;
   margin: 0 0 1rem;
-  border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
 }
 
-// Style tables
 table {
   margin-bottom: 1rem;
   width: 100%;
   font-size: 85%;
-  border: 1px solid #ddd;
+  border: 1px solid #d4d4d4;
   border-collapse: collapse;
-  border-radius: 8px;
-  overflow: hidden;
-
-  // Dark mode styles for tables
-  @media (prefers-color-scheme: dark) {
-    border: 1px solid #555;
+  
+@media (prefers-color-scheme: dark) {
+  border: 1px solid #555555;
   }
 }
 
-// Style table cells and headers
-td, th {
-  padding: 1rem;
-  border: 1px solid #ddd;
-
-  // Dark mode styles for table cells and headers
-  @media (prefers-color-scheme: dark) {
-    border: 1px solid #555;
+td,
+th {
+  padding: .25rem .5rem;
+  border: 1px solid #d4d4d4;
+  
+@media (prefers-color-scheme: dark) {
+  border: 1px solid #555555;
   }
 }
 
-// Style table headers
 th {
   text-align: left;
-  background-color: #f4f4f4;
-
-  // Dark mode styles for table headers
-  @media (prefers-color-scheme: dark) {
-    background-color: #333;
-    color: #ddd;
-  }
 }
 
-// Style alternating table rows
 tbody tr:nth-child(odd) td,
 tbody tr:nth-child(odd) th {
-  background-color: #f9f9f9;
+  background-color: #eee;
 
-  // Dark mode styles for alternating rows
-  @media (prefers-color-scheme: dark) {
-    background-color: #444;
+@media (prefers-color-scheme: dark) {
+  background-color: #2d2d2d;
   }
 }
