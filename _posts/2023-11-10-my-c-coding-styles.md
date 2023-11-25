@@ -142,7 +142,7 @@ static char static_variable2 = 'A';     /**< Description of staticVariable2 */
 /*----------------------------------------------------------------------------*/
 /**
  * @brief Implementation of my_function2.
- * @param1:	(IN) Description of the first parameter.
+ * @param1: (IN) Description of the first parameter.
  * @param2: (OUT) Description of the second parameter.
  * @param3: (IN/OUT) Description of the second parameter.
  *
