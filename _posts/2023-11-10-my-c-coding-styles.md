@@ -162,5 +162,7 @@ int my_function2(int a, int b) {
 ### Reference Link
 
 [https://www2.cs.arizona.edu/~mccann/styletemplatesCP.html](https://www2.cs.arizona.edu/~mccann/styletemplatesCP.html)
+
 [https://github.com/MaJerle/c-code-style](https://github.com/MaJerle/c-code-style)
+
 [https://users.ece.cmu.edu/~eno/coding/CCodingStandard.html](https://users.ece.cmu.edu/~eno/coding/CCodingStandard.html)
