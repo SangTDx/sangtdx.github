@@ -1,6 +1,6 @@
 ---
 layout: post
-title: My C Coding Standard
+title: C Coding Comment Template
 date: 2023-11-10 00:00:00
 categories: [programming]
 tags: [programming]
